@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>DEV</title>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <style type="text/css">
+         /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            height: 100%;
+            background-color: #1985D0
+        }
+		.clear{clear:both}
+		.container {width:auto;background: #c4e1ed;margin: 0 auto;padding:7% 5% 25px 5%;}
+.inner-container{width:100%;}
+.st-count{width:78px;font:14px arial;color:#d4e5f9;min-height:75px;padding:43px 0 0 0;float:left;text-align:center;margin-right:15px}
+.station-cont{background:url(images/st-icon.jpg) no-repeat left top;width:auto;font:18px/28px arial;color:#09384c;padding:0;min-height:95px;float:left}
+.station-cont span{color:#878787;font-size:12px}
+.loc-dtl-img{width:100%;}
+.loc-img-lft{width:183px;height:182px;border-radius:4px;border-color:1px solid #9cccdf;background:#1583b2;margin-right:40px;float:left;margin-bottom:10px}
+.loc-img-ryt{width:183px;height:182px;border-radius:4px;border-color:1px solid #9cccdf;background:#15b245;float:left;}
+.cyk-cont{width:100%;font:700 110px Arial;color:#FFF;text-align:center;}
+.cycle-img{width:100%;background:url(images/cycle-img.jpg) no-repeat center;height:43px;}
+.park-img{width:100%;background:url(images/park-img.jpg) no-repeat center;height:43px;}
+.data-cont{width:auto;padding:20px 0 0 22px;font:700 18px arial;color:#093a4e}
+.data-cont span{font:700 12px arial;color:#8a8a8a}
+.rt-plan{width:90%;height:auto;background:#FFF;border:1px solid #1583b2;border-radius:3px;margin:25px 0 0 0}
+.rt-pl-ico{width:auto;background:url(images/rt-plan-ico.jpg) no-repeat 18px 14px;height:71px;border-bottom:1px solid #1583b2;font:700 14px/70px Arial;color:#1583b2;padding-left:100px}
+.rt-fav-ico{width:auto;background:url(images/rt-fav-ico.jpg) no-repeat 18px 6px;height:71px;font:700 14px/70px Arial;color:#1583b2;padding-left:100px}
+		
+		.home{text-align:center}
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            text-align: center;
+            width: 100%;
+            height: 30px;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+
+        #appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            display: inline-block;
+            height: 30px;
+            -webkit-border-radius: 15px;
+            margin: 0 5px;
+            width: 30px;
+            opacity: 0.8;
+        }
+
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 0.8
+            }
+            50% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0.8
+            }
+        }
+		@media screen and (max-width:380px)
+		{
+			.loc-img-ryt{width:120px;height:120px;border-radius:4px;border-color:1px solid #9cccdf;background:#15b245;float:left;}
+			.loc-img-lft{width:120px;height:120px;border-radius:4px;border-color:1px solid #9cccdf;background:#1583b2;float:left;margin-bottom:10px;margin-right:25px;}
+			.cyk-cont{width:100%;font:700 60px Arial;color:#FFF;text-align:center;}
+		}
+		.startbutton #ext-element-10{-webkit-mask-image:url(images/more.png)}
+    </style>
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script id="microloader" type="text/javascript" src="touch/microloader/development.js"></script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="TopLevelPanel"></div>
+</body>
+</html>
